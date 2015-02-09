@@ -37,16 +37,16 @@ lunchSpots = [
   ]
 
 sayings = [
-  "yearn for",
+  "yearns for",
   "must have",
-  "desire",
-  "bid you to visit",
+  "desires",
+  "bids you to visit",
   "recently had a lovely meal at",
-  "humbly recommend",
-  "am craving",
-  "think you will enjoy",
-  "insist that you visit",
-  "nod at"
+  "humbly recommends",
+  "is craving",
+  "thinks you will enjoy",
+  "insists that you visit",
+  "nods at"
   ]
 
 module.exports = (robot) ->
@@ -55,4 +55,4 @@ module.exports = (robot) ->
     saying = msg.random sayings
     spot = msg.random lunchSpots
 
-    msg.send "I " + saying + " " + spot + "."
+    msg.send "/me " + saying + " " + spot + "."
