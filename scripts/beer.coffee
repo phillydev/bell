@@ -10,7 +10,7 @@
 module.exports = (robot) ->
   beer_bot = 'https://beermebot.herokuapp.com'
 
-  robot.respond /what's on tap at ([^\?]*)\??/i, (msg) ->
+  robot.respond /what['’]?s on tap at ([^\?]*)\??/i, (msg) ->
     search_for(msg, 'bars')
 
   robot.respond /where is (.*) on tap\??/i, (msg) ->
